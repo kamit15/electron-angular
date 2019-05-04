@@ -39,6 +39,13 @@ You have your Angular + Electron app in a local development environment with **h
 The code for this is managed at `main.js`. In this sample, the app runs with a simple Electron window.
 By default, Developer tools is opened. You can deactivate it by uncommenting `win.webContents.openDevTools();` in `main.js`.
 
+If you want to use Angular-cli to generate components & co, you must to install it globally.  
+Please follow [Angular-cli documentation](https://github.com/angular/angular-cli) if you had installed an old version of angular-cli and need to upgrade it.
+
+``` bash
+npm install -g @angular/cli
+```
+
 ## To build for production
 
 - npm run electron:dist

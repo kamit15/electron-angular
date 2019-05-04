@@ -1,5 +1,7 @@
-[![Build Status](https://travis-ci.org/kamit15/electron-angular.svg?branch=master)](https://travis-ci.org/kamit15/electron-angular)
 [![Angular Logo](./logo-angular.jpg)](https://angular.io/) [![Electron Logo](./logo-electron.jpg)](https://electronjs.org/)
+
+[![Build Status](https://travis-ci.org/kamit15/electron-angular.svg?branch=master)](https://travis-ci.org/kamit15/electron-angular)
+[![License](https://img.shields.io/badge/license-Apache2-blue.svg?style=flat)](https://github.com/kamit15/electron-angular/blob/master/LICENSE)
 
 # Introduction
 

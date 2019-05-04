@@ -21,14 +21,12 @@ function createWindow() {
     });
 
     let url = 'http://localhost:4200';
-    // let Args = process.argv.slice(2);
-    // console.log(process.argv)
-    // Args.forEach(function (val) {
-    //     if(val === 'dist') {
-    //         url = 'file://' + __dirname + '/dist/index.html'
-    //     }
-    // });
-    url = 'file://' + __dirname + '/dist/electron-angular/index.html'
+    let Args = process.argv.slice(2);
+    Args.forEach(function (val) {
+        if(val === 'dist') {
+            url = 'file://' + __dirname + '/dist/electron-angular/index.html'
+        }
+    });
 
     // and load the index.html of the app.
     win.loadURL(url);

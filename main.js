@@ -20,7 +20,7 @@ function createWindow() {
         height: size.height
     });
 
-    let url = 'file://' + __dirname + '/dist/electron-angular/index.html';
+    let url = 'file://' + __dirname + '/electron-angular/index.html';
     
     let Args = process.argv.slice(1);
     Args.forEach(function (val) {

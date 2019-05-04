@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/maximegris/angular-electron.svg?branch=master)](https://api.travis-ci.org/kamit15/electron-angular.svg?branch=master)
+[![Build Status](https://travis-ci.org/kamit15/electron-angular.svg?branch=master)](https://travis-ci.org/kamit15/electron-angular)
 [![Angular Logo](./logo-angular.jpg)](https://angular.io/) [![Electron Logo](./logo-electron.jpg)](https://electronjs.org/)
 
 # Introduction

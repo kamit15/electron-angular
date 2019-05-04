@@ -14,12 +14,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && copyfiles main.js dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "electron": "electron .",
-    "electron dist": "electron main.js"
+    "electron:serve": "electron . --serve",
+    "electron:dist": "npm run build && electron dist/main.js",
+    "electron:linux": "npm run build && copyfiles package.json dist && && electron-packager dist --overwrite --platform=linux --arch=x64 --asar=true  --out=app-builds",
+    "electron:windows": "npm run build && copyfiles package.json dist && electron-packager dist --overwrite --platform=win32 --arch=ia32 --asar=false --out=app-builds",
+    "electron:mac": "npm run build && copyfiles package.json dist && electron-packager . --overwrite --platform=darwin --arch=x64 --asar=true --out=app-builds"
   },
   "private": true,
   "dependencies": {
@@ -45,7 +48,9 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "copyfiles": "^2.1.0",
     "electron": "^4.0.0",
+    "electron-packager": "^13.1.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",

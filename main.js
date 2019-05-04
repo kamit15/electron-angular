@@ -20,11 +20,12 @@ function createWindow() {
         height: size.height
     });
 
-    let url = 'http://localhost:4200';
-    let Args = process.argv.slice(2);
+    let url = 'file://' + __dirname + '/dist/electron-angular/index.html';
+    
+    let Args = process.argv.slice(1);
     Args.forEach(function (val) {
-        if(val === 'dist') {
-            url = 'file://' + __dirname + '/dist/electron-angular/index.html'
+        if(val === '--serve') {
+            url = 'http://localhost:4200'
         }
     });
 

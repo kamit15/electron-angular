@@ -1,6 +1,6 @@
 {
   "name": "electron-angular",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Angular 7 with Electron (TypeScript + CSS)",
   "author": {
     "name": "Amit",
